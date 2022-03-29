@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "3e9aa5cc-ab4b-4334-bbcd-41f7b5724f4e",
+		"name": "Spring-Boot-Jwt-Without-Database",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Validate-Jwt-Token-user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authentication-Data",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMTIzNDU2Nzg5MCIsInVzZXJOYW1lIjoiZG9jc2NvbnNvbGVVc2VyIiwicm9sZU5hbWUiOiJ1c2VyIiwiaXNFbmFibGVkIjoieWVzIiwicGFzc3dvcmQiOiJ0ZXN0UGFzc3dvcmQiLCJlbWFpbCI6InRlc3R1c2VyQGRvY3Njb25zb2xlLmNvbSJ9.8PIALnlkazjcZ5qpnLqfyU9_B3vkMElLp_g4JERNPbU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"docsconsoleUser\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/jwt/validate/userToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jwt",
+						"validate",
+						"userToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate-Jwt-Token-admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authentication-Data",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMTIzNDU2Nzg5MCIsInVzZXJOYW1lIjoiZG9jc2NvbnNvbGVBZG1pbiIsInJvbGVOYW1lIjoiYWRtaW4iLCJpc0VuYWJsZWQiOiJ5ZXMiLCJwYXNzd29yZCI6InRlc3RQYXNzd29yZCIsImVtYWlsIjoidGVzdHVzZXJAZG9jc2NvbnNvbGUuY29tIn0.co8xUHySQVMsqhOJeWb1Sr-wjUT0T4bE7WU0tyNnKWA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"docsconsoleAdmin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/jwt/validate/adminToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jwt",
+						"validate",
+						"adminToken"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

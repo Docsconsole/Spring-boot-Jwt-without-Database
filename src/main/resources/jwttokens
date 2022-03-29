@@ -1,0 +1,31 @@
+//PayLoad you need to provide in https://jwt.io/ to provide admin jwt token
+{
+  "name": "1234567890",
+  "userName": "docsconsoleUser",
+  "roleType": "user",
+  "isEnabled": "yes",
+  "password":"testPassword",
+  "email":"testuser@docsconsole.com"
+
+}
+
+//jwt token for user
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMTIzNDU2Nzg5MCIsInVzZXJOYW1lIjoiZG9jc2NvbnNvbGVVc2VyIiwicm9sZU5hbWUiOiJ1c2VyIiwiaXNFbmFibGVkIjoieWVzIiwicGFzc3dvcmQiOiJ0ZXN0UGFzc3dvcmQiLCJlbWFpbCI6InRlc3R1c2VyQGRvY3Njb25zb2xlLmNvbSJ9.8PIALnlkazjcZ5qpnLqfyU9_B3vkMElLp_g4JERNPbU
+
+
+
+//PayLoad you need to provide in https://jwt.io/ to provide admin jwt token
+{
+  "name": "1234567890",
+  "userName": "docsconsoleAdmin",
+  "roleType": "admin",
+  "isEnabled": "yes",
+  "password":"testPassword",
+  "email":"testuser@docsconsole.com"
+
+}
+
+
+//jwt token for admin
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMTIzNDU2Nzg5MCIsInVzZXJOYW1lIjoiZG9jc2NvbnNvbGVBZG1pbiIsInJvbGVOYW1lIjoiYWRtaW4iLCJpc0VuYWJsZWQiOiJ5ZXMiLCJwYXNzd29yZCI6InRlc3RQYXNzd29yZCIsImVtYWlsIjoidGVzdHVzZXJAZG9jc2NvbnNvbGUuY29tIn0.co8xUHySQVMsqhOJeWb1Sr-wjUT0T4bE7WU0tyNnKWA
+
